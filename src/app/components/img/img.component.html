@@ -1,0 +1,5 @@
+<!-- <h3>{{counter}}</h3> -->
+<img [src]="img" (load)="imgLoad()" (error)="imgError()" *ngIf="img;else noImages">
+<ng-template #noImages>NO HAY IMAGENES PARA MOSTRAR
+  <img [src]="imageDefault">
+</ng-template>
